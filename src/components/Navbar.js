@@ -1,5 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
+
 const Navbar = ({ amount }) => {
   return (
     <nav>
@@ -21,4 +22,5 @@ const Navbar = ({ amount }) => {
 const mapStateProps = (state) => {
   return { amount: state.amount };
 };
+
 export default connect(mapStateProps)(Navbar);

@@ -11,7 +11,7 @@ const CartItem = ({ img, title, price, amount, remove, toggle }) => {
         <h4 className="item-price">${price}</h4>
         {/* remove button */}
         <button className="remove-btn" onClick={() => remove()}>
-          remove
+          REMOVE
         </button>
       </div>
       <div>
@@ -56,5 +56,3 @@ const mapDispatchToProps = (dispatch, ownProps) => {
 };
 
 export default connect(null, mapDispatchToProps)(CartItem);
-
-//135
